@@ -89,3 +89,36 @@ Role	Email	Password
 Admin	admin@test.com	12345678
 User	user@test.com	12345678
 ```
+### Known Issues
+** Backend cold start delay on Render: The first request may take a few seconds due to server cold start.
+
+** No email verification on registration, which could be added for better security.
+
+** Basic validation only on frontend forms (could be improved using libraries like Yup + Formik).
+
+** File upload size limit is not enforced ** users could accidentally upload large files.
+
+### Future Improvements
+** Add pagination and search to the Admin task list.
+
+** Polish UI with loading spinners and transitions using libraries like Framer Motion.
+
+** Implement JWT refresh tokens for longer sessions and improved security.
+
+** Add recurring tasks and reminders via email or notifications.
+
+** Improve mobile responsiveness for smaller screens.
+
+** Add comments or collaboration on tasks for teams.
+
+
+### Github LInk:
+Github: https://github.com/Deeksha960/TaskManager.git
+
+
+### Deployment Links :
+Vercel : https://task-manager-frontend-njbc99qwd-deeksha-raos-projects.vercel.app/
+
+Render Backend: "https://taskmanagerapp-jutv.onrender.com",
+
+Render Frontend: https://taskmanager-frontend-zijb.onrender.com

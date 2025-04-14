@@ -6,11 +6,18 @@ const authRoutes = require('./routes/authRoutes');
 
 dotenv.config();
 const app = express();
-app.use(cors());
+
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
 app.use('/api/auth', authRoutes);
+
+const allowedOrigins = ['https://taskmanager-frontend-zijb.onrender.com']; // replace with your actual frontend URL
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
 
 
 const taskRoutes = require('./routes/taskRoutes');
